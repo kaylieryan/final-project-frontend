@@ -1,0 +1,31 @@
+.navigation {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 10px 0; /* Padding around the navigation */
+    text-align: center; /* Center the navigation links */
+}
+
+.navigation ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.navigation ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Space between the links */
+}
+
+.navigation ul li:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+}
+
+.navigation ul li a {
+    text-decoration: none; /* Remove default link underlining */
+    color: #333; /* Dark grey color for the links */
+    font-size: 18px; /* Increase font size */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+.navigation ul li a:hover {
+    color: #007bff; /* Change color on hover */
+}

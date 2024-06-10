@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  min-height: 60px;
+  padding: 32px 40px 28px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__date {
+  color: #000;
+  font-family: "CabinetGrotesk-Bold", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; 
+  margin: 0;
+}
+
+.header__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__add-btn {
+  color: #000;
+  font-family: "CabinetGrotesk-Bold", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; 
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.header__name {
+  color: #000;
+  font-family: "CabinetGrotesk-Bold", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.header__register-btn {
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-family: "CabinetGrotesk-Bold", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+.header__login-btn {
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-family: "CabinetGrotesk-Bold", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.header__avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.header__avatar-default {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media all and (max-width: 660px) {
+  .header__logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
