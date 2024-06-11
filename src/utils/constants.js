@@ -1,4 +1,4 @@
-export const baseURL = 'https://api.potterdb.com/v1'; // Base URL for the API
+export const baseURL = "https://api.potterdb.com/v1"; // Base URL for the API
 
 export const processServerResponse = (res) => {
   if (res.ok) {

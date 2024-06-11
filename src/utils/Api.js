@@ -1,16 +1,15 @@
-import { baseURL } from "constants.js";
+import { baseURL } from "./constants";
+import { processServerResponse } from "./constants";
 
 //GET Characters
 export const fetchCharacters = () => {
   const getCharacters = fetch(`${baseURL}/characters`, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then((processServerResponse) => {
-    
+    method: "GET",
+    mode: "no-cors",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then(processServerResponse);
+
   return getCharacters;
-});
-}
-
-
+};
