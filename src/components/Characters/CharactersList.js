@@ -7,32 +7,12 @@ function CharactersList() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-    useEffect(() => {
-    const fetchCharacters = async () => {
-        try {
-        const response = await axios.get('https://api.potterdb.com/v1/characters');
-        // Access the 'data' property of the response object
-        const charactersData = response.data.data; // Adjusted to access the nested 'data'
-        setCharacters(charactersData);
-        setLoading(false);
-        } catch (error) {
-        setError(error);
-        setLoading(false);
-        }
-    };
-
-    fetchCharacters();
-    }, []);
-
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
-
 return (
-    <div className='characters_container'> {/* Updated class name for the container */}
+    <div className='characters'> {/* Updated class name for the container */}
         <h2 className='characters_title'>Characters</h2> {/* Unique class name for the title */}
-        <ul className='characters_grid'> {/* Updated class name for the grid */}
+        <ul className='characters__grid'> {/* Updated class name for the grid */}
         {characters.map((character) => (
-            <li className='character_item' key={character.id}> {/* Unique class name for each item */}
+            <li className='character__item' key={character.id}> {/* Unique class name for each item */}
             <h3>{character.attributes.name}</h3> {/* Removed class name for simplicity */}
             {character.attributes.image && <img src={character.attributes.image} alt={character.attributes.name} className='character_image' />}
             <p>House: {character.attributes.house || 'Unknown'}</p>
